@@ -10,6 +10,8 @@ use App\Entity\Participant;
 class SessionRegistrator
 {
 
+    private $em;
+
     const MAX_PARTICIPANTS = 50;
 
     public function __construct(EntityManagerInterface $em)
